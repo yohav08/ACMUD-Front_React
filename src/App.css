@@ -40,3 +40,11 @@
 .read-the-docs {
   color: #888;
 }
+
+p {
+  font-family: 'DS-Digital', sans-serif;
+  font-size: 100px;
+  color: #00bfff;
+  text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
+  margin-top: 20px;
+}

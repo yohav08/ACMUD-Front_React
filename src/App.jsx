@@ -6,6 +6,7 @@
 import './App.css'
 import { useState } from 'react'
 
+
 function App() {
   const[count, setCount] = useState(0);
 
@@ -17,9 +18,9 @@ function App() {
   }
 
   return (<>
-    <button onClick={increment}>Incremento</button>
+    <button onClick={increment}>Incremento</button> &nbsp;
     <button onClick={decrement}>Decremento</button>
-    <p>valor:{count}</p>
+    <p>{count}</p>
 
 
   </>)
