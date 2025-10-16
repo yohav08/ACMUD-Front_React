@@ -1,10 +1,10 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-// import {Btn} from './components/btn.jsx'
+import {Btn} from './components/btn.jsx'
 
 import './App.css'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 
 function App() {
@@ -17,11 +17,15 @@ function App() {
     setCount(count-1);
   }
 
-  return (<>
-    <button onClick={increment}>Incremento</button> &nbsp;
-    <button onClick={decrement}>Decremento</button>
-    <p>{count}</p>
+  useEffect(() => {
+    document.title = count;
+  }), [count];
 
+  return (<>
+
+    <Btn onClick={increment} name="Increment"/>&nbsp;
+    <Btn onClick={decrement} name="Decrement"/>
+    <p>{count}</p>
 
   </>)
 }
