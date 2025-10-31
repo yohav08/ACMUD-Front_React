@@ -1,33 +1,31 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import {Btn} from './components/btn.jsx'
+import { useEffect } from 'react';
+import { Btn } from './components/btn.jsx';
+import './App.css';
+import { useCounter } from './hooks/useCounter';
 
-import './App.css'
-import { useState, useEffect } from 'react'
-
+import { FaPlay, FaPause, FaRedoAlt, FaForward, FaBackward } from "react-icons/fa";
 
 function App() {
-  const[count, setCount] = useState(0);
-
-  const  increment = () => {
-    setCount(count+1);
-  }
-  const  decrement = () => {
-    setCount(count-1);
-  }
+  // usamos el hook actualizado con toggle
+  const { count, running, toggle, reiniciar, adelantar, atrasar } = useCounter(0);
 
   useEffect(() => {
-    document.title = count;
-  }), [count];
+    document.title = `Counter: ${count}`;
+  }, [count]);
 
-  return (<>
+  return (
+    <>
+      <p>{count}</p>
 
-    <Btn onClick={increment} name="Increment"/>&nbsp;
-    <Btn onClick={decrement} name="Decrement"/>
-    <p>{count}</p>
-
-  </>)
+      <Btn className="tam" onClick={atrasar}> <FaBackward /> <br />Atrasar -5sg </Btn> &nbsp;
+      <Btn onClick={toggle}>
+        {running ? <FaPause /> : <FaPlay />}<br />
+        {running ? "Pausar" : "Iniciar"}
+      </Btn> &nbsp;
+      <Btn className="tam" onClick={adelantar}><FaForward /> <br />Adelantar +5sg</Btn> <br/> <br/>
+      <Btn className="tam" onClick={reiniciar}><FaRedoAlt /><br />Reiniciar</Btn>
+    </>
+  );
 }
 
-export default App
+export default App;

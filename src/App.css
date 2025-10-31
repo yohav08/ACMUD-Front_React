@@ -43,8 +43,13 @@
 
 p {
   font-family: 'DS-Digital', sans-serif;
-  font-size: 100px;
+  font-size: 150px;
   color: #00bfff;
   text-shadow: 0 0 10px #00bfff, 0 0 20px #00bfff;
   margin-top: 20px;
+}
+
+.tam {
+  width: 180px;
+  color: aliceblue;
 }
