@@ -50,7 +50,7 @@
 
 /* Tema claro aplicado al body */
 body.claro {
-  background-color: #f5f5f5;
+  background-color: #f2eded;
   color: #222;
   margin: 0;
   padding: 20px;
@@ -59,7 +59,7 @@ body.claro {
 }
 
 .claro button {
-  background: #ddd;
+  background: #c2bcbc;
   color: #222;
 }
 
