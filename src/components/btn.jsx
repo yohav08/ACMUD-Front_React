@@ -1,3 +1,8 @@
+
+
+
+
+// Counter con adelantar y atrasar
 export function Btn({ onClick, children, className }) {
     return (
         <button className={className} onClick={onClick}>
@@ -5,3 +10,6 @@ export function Btn({ onClick, children, className }) {
         </button>
     );
 }
+
+
+// Counter sencillo
