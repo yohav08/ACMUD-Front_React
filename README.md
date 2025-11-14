@@ -1,6 +1,6 @@
 # ACMUD - Front / React
 
-Una aplicación web simple con React que incluye los registros de mis avances con ReactJS.
+Una aplicación web simple que incluye los registros de mis avances con React JS.
 
 ## ✨ Características
 
@@ -22,4 +22,4 @@ La aplicación se abrirá en `http://localhost:5173`
 
 ## Autora
 
-- Yohana Avila Mendoza - ayavilam@udistrital.edu.co - Curso de Fronend / React JS
+- Yohana Avila Mendoza - ayavilam@udistrital.edu.co - Curso de Frontend / React JS
