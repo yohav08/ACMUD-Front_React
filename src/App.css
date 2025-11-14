@@ -24,7 +24,9 @@ html{
 }
 
 
-/* Tema claro aplicado */
+
+/* ! TEMA CLARO */
+/* ? COMBINACIONES Y PROPIEDADES */
 
 .claro .counter {
   color: #222;
@@ -51,7 +53,8 @@ body.claro {
   border: 1px solid #d1d5db;
 }
 
-/* Tema oscuro aplicado */
+/* ! TEMA OSCURO */
+/* ? COMBINACIONES Y PROPIEDADES */
 body.oscuro {
   background-color: #1c1c1c;
   color: #f5f5f5;
