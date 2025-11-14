@@ -1,7 +1,6 @@
-// Counter con adelantar y atrasar - Tarea 2
-export function Btn({ onClick, children, className }) {
+export function Btn({ onClick, children, className, type = "button" }) {
     return (
-        <button className={className} onClick={onClick}>
+        <button type={type} className={className} onClick={onClick}>
             {children}
         </button>
     );

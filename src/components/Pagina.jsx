@@ -12,8 +12,9 @@ export function Pagina(){
     return(<>
         <div>
             <h1 style={{"fontFamily": "Roboto, sans-serif"}}>
-                {oscuro ? "Modo Oscuro" : "Modo Claro"}
-                {oscuro ? <FaSun /> : <FaMoon />}
+                {oscuro ? <FaMoon /> : <FaSun />}
+                {oscuro ? " Modo Oscuro " : " Modo Claro "}
+                {oscuro ? <FaMoon /> : <FaSun />}
             </h1>
 
             <button className="btn" onClick={alternarTema}>  

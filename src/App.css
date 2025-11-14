@@ -1,36 +1,12 @@
+html{
+  scroll-behavior: smooth;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
 }
 
 .counter {
@@ -48,7 +24,13 @@
 }
 
 
-/* Tema claro aplicado al body */
+/* Tema claro aplicado */
+
+.claro .counter {
+  color: #222;
+  text-shadow: 0 0 10px #888, 0 0 20px #888;
+}
+
 body.claro {
   background-color: #f2eded;
   color: #222;
@@ -63,7 +45,13 @@ body.claro {
   color: #222;
 }
 
-/* Tema oscuro aplicado al body */
+.claro input, .claro textarea {
+  background: #ffffff;
+  color: #000000; /* Negro puro para máximo contraste */
+  border: 1px solid #d1d5db;
+}
+
+/* Tema oscuro aplicado */
 body.oscuro {
   background-color: #1c1c1c;
   color: #f5f5f5;
@@ -75,4 +63,39 @@ body.oscuro {
 .oscuro button {
   background: #444;
   color: #fff;
+}
+
+.oscuro input, .oscuro textarea {
+  background: #1f2937;
+  color: #ffffff; /* Blanco puro */
+  border: 1px solid #374151;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px 0;
+  border: 0.5px solid #ffffff;
+  border-radius: 4px;
+  box-sizing: border-box;
+  border-color: #00bfff;
+  outline: none;
+}
+
+.submit-clear-btns{
+  display: 'flex';
+  gap: '10px';
+  margin-top: '15px';
+  border-color: #00bfff;
+
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.p-error{
+  animation: fadeIn 1.5s forwards;
+
 }
